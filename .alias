@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+# common folders i use
+alias chem='cd ~/Chem'
+alias dotfiles='cd ~/Repos/dotfiles'
+alias cult='cd ~/Cult'
+alias repos='cd ~/Repos'
+alias doc='cd ~/Chem/doutorado/projects'
+alias scripts='cd ~/scripts'
+alias software='cd ~/software'
+alias finance='cd ~/Finances'
+
+# shortcuts
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias c='clear'
+alias :q='exit'
+
+
+#vim
+alias v='nvim'
+alias vim='v'
+alias vf='v $(fzf --height 40%)' # nvim with fzf
+alias mvim='v -o'
+alias vm='v -O'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# system
+alias update='echo "Updating system..."; sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y'
+alias apti='sudo apt install'
+alias shutdnow='shutdown now'
+alias mkdir='mkdir -p'
+alias fuzzyfind='find * -type f | fzf > selected'
+alias fuzzyhist='history | fzf'
+alias checksize='sudo df -h .; du -sh -- * | sort -hr | less'
+alias checksize1='sudo df -h .; du -h --max-depth=1 -- * | sort -hr | less'
+alias reload='source ~/.zshrc'
+
+# confirm before copy, move or remove
+alias mv='mv -i'
+alias rm='rm -i'
+alias cp='cp -i'
+
+# programs 
+alias df='duf'
+alias cat='batcat'
+alias chemcraft='wine ~/.wine/drive_c/Chemcraft/Chemcraft.exe'
+alias crest='/opt/crest'
+
+# ledger aliases
+alias hled-web='hledger-web'
+alias hled-ui='hledger-ui'
+alias hled='hledger'
+alias hled-grana='hled bs -B assets:grana'
+alias hled-invest='hled bs -B assets:investimentos'
+alias hled-net='hled bs -B assets:grana liabilities'
+alias hledbal='hled bal -t'
+
+# lsd
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
+# git 
+alias untrackedgit='git ls-files --others --exclude-standard' # check for untracked files
+alias g='git'
+alias gf='git diff --name-only'
