@@ -46,7 +46,6 @@ alias cp='cp -i'
 
 # programs 
 alias df='duf'
-alias cat='batcat'
 alias chemcraft='wine ~/.wine/drive_c/Chemcraft/Chemcraft.exe'
 alias crest='/opt/crest'
 
