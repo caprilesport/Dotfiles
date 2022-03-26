@@ -29,6 +29,7 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'farmergreg/vim-lastplace'
+  -- use 'govim/govim'
 
   --CHADTree 
   use {'ms-jpq/chadtree', branch='chad', run='python3 -m chadtree deps'}
