@@ -9,6 +9,7 @@ alias doc='cd ~/Chem/doutorado/projects'
 alias scripts='cd ~/scripts'
 alias software='cd ~/software'
 alias finance='cd ~/Finances'
+alias projects='cd ~/Chem/doutorado/projects'
 
 # shortcuts
 alias ..='cd ..'
