@@ -7,7 +7,8 @@ alias cult='cd ~/Cult'
 alias repos='cd ~/Repos'
 alias doc='cd ~/Chem/doutorado/projects'
 alias scripts='cd ~/scripts'
-alias software='cd ~/software'
+alias software='cd /opt/'
+alias downloads='cd ~/Downloads'
 alias finance='cd ~/Finances'
 alias projects='cd ~/Chem/doutorado/projects'
 
@@ -17,6 +18,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias c='clear'
 alias :q='exit'
+alias qstat='ssh jupiter "qstat"'
 
 
 #vim
@@ -40,15 +42,11 @@ alias checksize='sudo df -h .; du -sh -- * | sort -hr | less'
 alias checksize1='sudo df -h .; du -h --max-depth=1 -- * | sort -hr | less'
 alias reload='source ~/.zshrc'
 
-# confirm before copy, move or remove
-alias mv='mv -i'
-alias rm='rm -i'
-alias cp='cp -i'
-
 # programs 
 alias df='duf'
 alias chemcraft='wine ~/.wine/drive_c/Chemcraft/Chemcraft.exe'
 alias crest='/opt/crest'
+alias censo='/opt/censo'
 
 # ledger aliases
 alias hled-web='hledger-web'
