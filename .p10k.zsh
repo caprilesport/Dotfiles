@@ -464,11 +464,7 @@
   # Don't show Git status in prompt for repositories whose workdir matches this pattern.
   # For example, if set to '~', the Git repository at $HOME/.git will be ignored.
   # Multiple patterns can be combined with '|': '~(|/foo)|/bar/baz/*'.
-<<<<<<< HEAD
-  typeset -g POWERLEVEL9K_VCS_DISABLED_WORKDIR_PATTERN='~'
-=======
   typeset -g POWERLEVEL9K_VCS_DISABLED_WORKDIR_PATTERN=''
->>>>>>> 75d0fb20b42979161b6c02758bdfe32bb5600e99
 
   # Disable the default Git status formatting.
   typeset -g POWERLEVEL9K_VCS_DISABLE_GITSTATUS_FORMATTING=true
@@ -484,11 +480,7 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_VCS_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
-<<<<<<< HEAD
   # typeset -g POWERLEVEL9K_VCS_PREFIX='%fon '
-=======
-  typeset -g POWERLEVEL9K_VCS_PREFIX='%fon '
->>>>>>> 75d0fb20b42979161b6c02758bdfe32bb5600e99
 
   # Show status of repositories of these types. You can add svn and/or hg if you are
   # using them. If you do, your prompt may become slow even when your current directory
@@ -549,11 +541,7 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
-<<<<<<< HEAD
   # typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PREFIX='%ftook '
-=======
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PREFIX='%ftook '
->>>>>>> 75d0fb20b42979161b6c02758bdfe32bb5600e99
 
   #######################[ background_jobs: presence of background jobs ]#######################
   # Don't show the number of background jobs.
@@ -873,11 +861,7 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_CONTEXT_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
-<<<<<<< HEAD
   # typeset -g POWERLEVEL9K_CONTEXT_PREFIX='%fwith '
-=======
-  typeset -g POWERLEVEL9K_CONTEXT_PREFIX='%fwith '
->>>>>>> 75d0fb20b42979161b6c02758bdfe32bb5600e99
 
   ###[ virtualenv: python virtual environment (https://docs.python.org/3/library/venv.html) ]###
   # Python virtual environment color.
@@ -1264,11 +1248,7 @@
   POWERLEVEL9K_KUBECONTEXT_DEFAULT_CONTENT_EXPANSION+='${${:-/$P9K_KUBECONTEXT_NAMESPACE}:#/default}'
 
   # Custom prefix.
-<<<<<<< HEAD
   # typeset -g POWERLEVEL9K_KUBECONTEXT_PREFIX='%fat '
-=======
-  typeset -g POWERLEVEL9K_KUBECONTEXT_PREFIX='%fat '
->>>>>>> 75d0fb20b42979161b6c02758bdfe32bb5600e99
 
   ################[ terraform: terraform workspace (https://www.terraform.io) ]#################
   # Don't show terraform workspace if it's literally "default".
@@ -1468,11 +1448,7 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_TOOLBOX_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
-<<<<<<< HEAD
   # typeset -g POWERLEVEL9K_TOOLBOX_PREFIX='%fin '
-=======
-  typeset -g POWERLEVEL9K_TOOLBOX_PREFIX='%fin '
->>>>>>> 75d0fb20b42979161b6c02758bdfe32bb5600e99
 
   ###############################[ public_ip: public IP address ]###############################
   # Public IP color.
