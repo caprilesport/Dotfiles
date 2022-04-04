@@ -27,9 +27,6 @@ source ~/.env
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-
-
 # >>> juliaup initialize >>>
 
 # !! Contents within this block are managed by juliaup !!
