@@ -135,6 +135,8 @@ return require('packer').startup(function()
   require'lspconfig'.bashls.setup{}
   require'lspconfig'.gopls.setup{}
   require'lspconfig'.tsserver.setup{}
+  require'lspconfig'.jsonls.setup{}
+
 
   -- TreeSitter
   use {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'}
