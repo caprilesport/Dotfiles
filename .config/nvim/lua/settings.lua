@@ -82,3 +82,5 @@ cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 -- go 
 
 require('go').setup()
+
+
