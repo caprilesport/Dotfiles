@@ -1,7 +1,7 @@
 #importing dracula theme
 
 import:
-  - ~/.config/alacritty/gruvbox.yml
+  - ~/.config/alacritty/colors/tokyonight.yml
 
 window.opacity: 1.00
 
