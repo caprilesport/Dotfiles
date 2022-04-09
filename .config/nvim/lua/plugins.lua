@@ -29,6 +29,7 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'farmergreg/vim-lastplace'
+  use 'davidgranstrom/nvim-markdown-preview'
   -- use 'govim/govim'
 
   --CHADTree 
