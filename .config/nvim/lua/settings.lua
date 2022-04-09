@@ -78,3 +78,9 @@ cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 -- 'find_word'          : 'SPC f a',
 -- 'book_marks'         : 'SPC f b',
 -- }
+
+-- go 
+
+require('go').setup()
+
+

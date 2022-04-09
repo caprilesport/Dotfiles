@@ -15,8 +15,11 @@ return require('packer').startup(function()
   
   -- Colorscheme
   -- use 'Mofiqul/dracula.nvim'
-  use 'marko-cerovac/material.nvim' 
-  vim.g.material_style = "deep ocean"
+  -- use 'marko-cerovac/material.nvim' 
+  -- vim.g.material_style = "deep ocean"
+  
+  use 'folke/tokyonight.nvim'
+  vim.g.tokyonight_style = "night"
 
   -- Simple stuff
   use 'tpope/vim-surround'
@@ -29,8 +32,10 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'farmergreg/vim-lastplace'
-  use 'davidgranstrom/nvim-markdown-preview'
+  use 'iamcco/markdown-preview.nvim'
   -- use 'govim/govim'
+  use 'ray-x/go.nvim'
+
 
   --CHADTree 
   use {'ms-jpq/chadtree', branch='chad', run='python3 -m chadtree deps'}
@@ -91,7 +96,7 @@ return require('packer').startup(function()
   require('lualine').setup {
     options = {
       icons_enabled = true,
-      theme = 'auto',
+      theme = 'tokyonight',
       component_separators = { left = '', right = ''},
       section_separators = { left = '', right = ''},
       disabled_filetypes = {},
