@@ -8,8 +8,7 @@ fi
 
 # Path to oh-my-zsh installation.
 export ZSH="/home/vinicp/.oh-my-zsh"
-ZSH_THEME="robbyrussell" 
-# ZSH_THEME="powerlevel10k/powerlevel10k" 
+ZSH_THEME="powerlevel10k/powerlevel10k" 
 HIST_STAMPS="dd/mm/yyyy"  
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
