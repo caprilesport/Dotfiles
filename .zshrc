@@ -16,7 +16,17 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 #Plugins
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(
+  git 
+  zsh-syntax-highlighting 
+  zsh-autosuggestions
+  zsh-history-substring-search
+  golang
+  npm
+  poetry
+  rust
+  vscode
+)
 source $ZSH/oh-my-zsh.sh
 
 # aliases and enviroment variables

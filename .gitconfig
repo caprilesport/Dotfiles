@@ -1,19 +1,22 @@
-# set your user tokens as environment variables, mine are in ~/.gitconfig.user 
 [color]
-  ui = true
+	ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red
-  new = green
+	meta = 11
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	func = 146 bold
+	commit = yellow bold
+	whitespace = red reverse
 [alias]
   # add
   a = add                           # add
   chunkyadd = add --patch           # stage commits chunk by chunk
+
   # Shows list of contributors of a repository.
   contributors = shortlog --summary --numbered --email
 
@@ -93,11 +96,6 @@
 
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-[mergetool]
-  prompt = false
-[mergetool "mvimdiff"]
-  cmd="mvim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
-  keepbackup=false
 [merge]
   summary = true
   verbosity = 1
@@ -114,6 +112,7 @@
   autocrlf = false
   editor = vim
   excludesfile = ~/.yadr/git/gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [advice]
   statusHints = false
 [diff]
@@ -125,10 +124,15 @@
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
-[include]
-  path = .gitconfig.user
 [user]
 	name = Vinicius Port
 	email = caprilesport@gmail.com
 [credential]
 	helper = cache
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
