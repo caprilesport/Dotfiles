@@ -19,6 +19,7 @@ alias ....='cd ../../..'
 alias c='clear'
 alias :q='exit'
 alias qstat='ssh jupiter "qstat"'
+alias qdel='ssh jupiter "qdel"'
 
 
 #vim

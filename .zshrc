@@ -45,3 +45,5 @@ path=('/home/vinicp/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
+
+source /home/vinicp/.config/broot/launcher/bash/br
