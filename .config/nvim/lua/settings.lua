@@ -10,10 +10,11 @@ local opt = vim.opt      		-- Set options (global/buffer/windows-scoped)
 
 
 -- General
-g.mapleader = ','               -- Change leader to a comma
+g.mapleader = ' '               -- Change leader to a comma
 opt.mouse = 'a'                 -- Enable mouse support
 opt.clipboard = 'unnamedplus'   -- Copy/paste to system clipboard
 opt.swapfile = false            -- Don't use swapfile
+opt.syntax = 'on'               -- vimwiki requires this  
 
 -- UI
 opt.number = true               -- Show line number
