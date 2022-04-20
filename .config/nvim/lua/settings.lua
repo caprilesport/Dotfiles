@@ -61,6 +61,30 @@ cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
 
 -- vimwiki
 
+cmd([[ let wiki_0 = {} ]])
+cmd([[ let wiki_0.path = '~/vimwiki' ]])
+cmd([[ let wiki_0.syntax = 'markdown' ]])
+cmd([[ let wiki_0.ext = '.md' ]])
+
+cmd([[ let wiki_1 = {} ]])
+cmd([[ let wiki_1.path = '~/vimwiki/work' ]])
+cmd([[ let wiki_1.syntax = 'markdown' ]])
+cmd([[ let wiki_1.ext = '.md' ]])
+
+cmd([[ let wiki_2 = {} ]])
+cmd([[ let wiki_2.path = '~/vimwiki/personal' ]])
+cmd([[ let wiki_2.syntax = 'markdown' ]])
+cmd([[ let wiki_2.ext = '.md' ]])
+
+
+cmd([[ let g:vimwiki_list = [wiki_0, wiki_1, wiki_2] ]])
+cmd([[ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'} ]])
+
+-- cmd([[ let wiki_3 = {} ]])
+-- cmd([[ let wiki_3.path = ~/vimwiki/.md ]])
+-- cmd([[ let wiki_3.syntax = 'markdown' ]])
+-- cmd([[ let wiki_3.ext = '.md' ]])
+
 -- -- Dashboard
 -- g.dashboard_custom_shortcut_icon['last_session'] = ' '
 -- g.dashboard_custom_shortcut_icon['find_history'] = 'ﭯ '

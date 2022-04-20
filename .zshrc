@@ -17,6 +17,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 #Plugins
 plugins=(
   git 
+  fzf-zsh-plugin
   zsh-syntax-highlighting 
   zsh-autosuggestions
   zsh-history-substring-search
@@ -45,3 +46,5 @@ path=('/home/vinicp/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
+
+source /home/vinicp/.config/broot/launcher/bash/br
