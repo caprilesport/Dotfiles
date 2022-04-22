@@ -17,6 +17,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 #Plugins
 plugins=(
   git 
+  fzf-zsh-plugin
   zsh-syntax-highlighting 
   zsh-autosuggestions
   zsh-history-substring-search
