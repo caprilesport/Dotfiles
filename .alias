@@ -28,6 +28,9 @@ alias vim='v'
 alias vf='v $(fzf --height 40%)' # nvim with fzf
 alias mvim='v -o'
 alias vm='v -O'
+alias vimconfig='vim ~/.config/nvim/lua/plugins.lua'
+alias vimsettings='vim ~/.config/nvim/lua/settings.lua'
+alias vimkeymaps='vim ~/.config/nvim/lua/keymaps.lua'
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '

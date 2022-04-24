@@ -17,15 +17,16 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 #Plugins
 plugins=(
   git 
-  fzf-zsh-plugin
-  zsh-syntax-highlighting 
-  zsh-autosuggestions
-  zsh-history-substring-search
   golang
   npm
   poetry
   rust
   vscode
+  fzf-zsh-plugin
+  fzf-tab
+  zsh-syntax-highlighting 
+  zsh-autosuggestions
+  zsh-history-substring-search
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -36,7 +37,6 @@ source ~/.env
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # >>> juliaup initialize >>>
 
@@ -48,3 +48,6 @@ export PATH
 # <<< juliaup initialize <<<
 
 source /home/vinicp/.config/broot/launcher/bash/br
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--height 60% --layout=reverse"
