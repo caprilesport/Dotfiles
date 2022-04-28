@@ -25,6 +25,7 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
   use 'tpope/vim-sensible'
+  use 'itchyny/calendar.vim'
 
 
 
@@ -53,6 +54,7 @@ return require('packer').startup(function()
   use 'blindFS/vim-taskwarrior'
   use 'tools-life/taskwiki'
   use 'preservim/tagbar'
+
   -- Minimap 
   -- use 'wfxr/minimap.vim' 
   -- vim.g.minimap_width = '10'
