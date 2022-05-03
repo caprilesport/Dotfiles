@@ -50,8 +50,6 @@ return require('packer').startup(function()
   -- vimwiki
   use 'vimwiki/vimwiki'
   use 'michal-h21/vimwiki-sync'
-  use 'blindFS/vim-taskwarrior'
-  use 'tools-life/taskwiki'
   use 'preservim/tagbar'
 
   -- Minimap 
