@@ -37,7 +37,6 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'farmergreg/vim-lastplace'
   use 'iamcco/markdown-preview.nvim'
-  use 'itchyny/calendar.vim'
 
   -- use 'govim/govim'
   use 'ray-x/go.nvim'
@@ -51,8 +50,6 @@ return require('packer').startup(function()
   -- vimwiki
   use 'vimwiki/vimwiki'
   use 'michal-h21/vimwiki-sync'
-  use 'blindFS/vim-taskwarrior'
-  use 'tools-life/taskwiki'
   use 'preservim/tagbar'
 
   -- Minimap 
