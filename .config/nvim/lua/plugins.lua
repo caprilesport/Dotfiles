@@ -40,7 +40,8 @@ return require('packer').startup(function()
 
   -- use 'govim/govim'
   use 'ray-x/go.nvim'
-
+  require('go').setup()
+  vim.api.nvim_exec([[ autocmd BufWritePre *.go :silent! lua require('go.format').gofmt() ]], false)
 
   --CHADTree 
   use {'ms-jpq/chadtree', branch='chad', run='python3 -m chadtree deps'}
@@ -186,7 +187,7 @@ return require('packer').startup(function()
   vim.g.coq_settings = { auto_start = 'shut-up' }
 
   -- Enable some language servers with the additional completion capabilities offered by coq_nvim
-  local servers = { 'clangd', 'rust_analyzer', 'pylsp', 'tsserver' }
+  local servers = { 'clangd', 'rust_analyzer', 'pylsp', 'tsserver','gopls' }
   for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup(require('coq').lsp_ensure_capabilities({
       on_attach = my_custom_on_attach,
