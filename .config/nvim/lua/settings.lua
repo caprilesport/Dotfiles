@@ -54,7 +54,7 @@ exec([[
 
 -- Don't auto comment new lines
 cmd [[au BufEnter * set fo-=c fo-=r fo-=o]]
-
+cmd [[au BufRead,BufNewFile *.inp set filetype=orca]]
 -------------------
 -- Plugin specific
 -------------------

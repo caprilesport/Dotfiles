@@ -26,6 +26,7 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
   use 'tpope/vim-sensible'
   use 'itchyny/calendar.vim'
+  use 'grimme-lab/orca.vim'
 
 
 
