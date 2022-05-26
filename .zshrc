@@ -52,3 +52,4 @@ source /home/vinicp/.config/broot/launcher/bash/br
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height 60% --layout=reverse"
+
