@@ -47,6 +47,7 @@ alias checksize1='sudo df -h .; du -h --max-depth=1 -- * | sort -hr | less'
 alias reload='source ~/.zshrc'
 
 # programs 
+alias fd='fdfind'
 alias df='duf'
 alias chemcraft='wine ~/.wine/drive_c/Chemcraft/Chemcraft.exe'
 alias pathofb='nohup wine ~/.wine/drive_c/users/vinicp/AppData/Roaming/Path\ of\ Building\ Community/Path\ of\ Building.exe &'
@@ -58,10 +59,6 @@ alias siesta='docker run -it ghcr.io/geem-lab/siesta:4.1.0 /bin/bash'
 alias hled-web='hledger-web'
 alias hled-ui='hledger-ui'
 alias hled='hledger'
-alias hled-grana='hled bs -B assets:grana'
-alias hled-invest='hled bs -B assets:investimentos'
-alias hled-net='hled bs -B assets:grana liabilities'
-alias hledbal='hled bal -t'
 
 # lsd
 alias ls='lsd'
