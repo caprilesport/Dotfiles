@@ -22,7 +22,7 @@ plugins=(
   poetry
   rust
   vscode
-  fzf-zsh-plugin
+  # fzf-zsh-plugin
   fzf-tab
   zsh-syntax-highlighting 
   zsh-autosuggestions
