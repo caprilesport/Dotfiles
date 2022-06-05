@@ -70,10 +70,6 @@ return require('packer').startup(function()
   use 'mfussenegger/nvim-dap'
   use 'nvim-lua/plenary.nvim'
 
-  -- Dashboard 
-  use 'glepnir/dashboard-nvim'
-  vim.g.dashboard_default_executive = 'telescope'
-
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
@@ -183,7 +179,7 @@ return require('packer').startup(function()
   use { 'ms-jpq/coq_nvim', run = 'python3 -m coq deps' }
   use 'ms-jpq/coq.artifacts'
   use 'ms-jpq/coq.thirdparty'
-  
+
   -- Automatically start coq
   vim.g.coq_settings = { auto_start = 'shut-up' }
 
