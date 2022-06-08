@@ -70,6 +70,21 @@ return require('packer').startup(function()
   use 'mfussenegger/nvim-dap'
   use 'nvim-lua/plenary.nvim'
 
+  -- Latex 
+  use 'lervag/vimtex' 
+  vim.g.tex_flavor='latex' 
+  vim.g.vimtex_view_method='zathura'
+  vim.g.vimtex_quickfix_mode=0
+  vim.g.tex_conceal='abdmg'
+
+  --Snippets for latex
+  use 'SirVer/ultisnips'
+  vim.g.UltiSnipsExpandTrigger="<c-b>"
+  vim.g.UltiSnipsJumpForwardTrigger="<c-b>"
+  vim.g.UltiSnipsJumpBackwardTrigger="<c-z>"
+  -- :UltiSnipsEdit splits your window.
+  vim.g.UltiSnipsEditSplit="vertical"
+
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
