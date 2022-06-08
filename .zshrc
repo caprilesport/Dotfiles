@@ -23,7 +23,7 @@ plugins=(
   rust
   vscode
   # fzf-zsh-plugin
-  fzf-tab
+  # fzf-tab
   zsh-syntax-highlighting 
   zsh-autosuggestions
   zsh-history-substring-search
