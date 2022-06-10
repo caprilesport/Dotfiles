@@ -1,3 +1,18 @@
+global !p
+def math():
+    return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+
+def comment(): 
+    return vim.eval('vimtex#syntax#in_comment()') == '1'
+
+def env(name):
+    [x,y] = vim.eval("vimtex#env#is_inside('" + name + "')") 
+    return x != '0' and x != '0'
+
+endglobal
+
+
+# non math related
 snippet today "Date"
 `date +%F`
 endsnippet
@@ -8,12 +23,14 @@ Yours sincerely,
 Vinicius C. Port
 endsnippet
 
+# create environments 
 snippet beg "begin{} / end{}" bA
 \begin{$1}
 	$0
 \end{$1}
 endsnippet
 
+# mathmode inline
 snippet mk "Math" wA
 $${1}$`!p
 if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
@@ -23,12 +40,14 @@ else:
 `$2
 endsnippet
 
+# mathmode multiline
 snippet dm "Math" wA
 \[
 $1
 .\] $0
 endsnippet
 
+# things related to sub/superscript
 snippet '([A-Za-z])(\d)' "auto subscript" wrA
 `!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
 endsnippet
@@ -53,9 +72,11 @@ snippet td "superscript" iA
 ^{$1}$0
 endsnippet
 
+# fractions are neat
 snippet // "Fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
+
 
 snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wrA
 \\frac{`!p snip.rv = match.group(1)`}{$1}$0
@@ -65,6 +86,7 @@ snippet sympy "sympy block " w
 sympy $1 sympy$0
 endsnippet
 
+# evaluate expressions like integrate(sin(x),x) in simpy (this is simply fantastic)
 priority 10000
 snippet 'sympy(.*)sympy' "evaluate sympy" wr
 `!p
@@ -80,6 +102,7 @@ snip.rv = eval('latex(' + match.group(1).replace('\\', '') \
 `
 endsnippet
 
+# bras and kets (he) for quantum stuff
 snippet "\<(.*?)\|" "bra" riA
 \bra{`!p snip.rv = match.group(1).replace('q', f'\psi').replace('f', f'\phi')`}
 endsnippet
@@ -92,4 +115,38 @@ snippet "(.*)\\bra{(.*?)}([^\|]*?)\>" "braket" riA
 `!p snip.rv = match.group(1)`\braket{`!p snip.rv = match.group(2)`}{`!p snip.rv = match.group(3).replace('q', f'\psi').replace('f', f'\phi')`}
 endsnippet
 
+# start a report easily
+snippet reportTemplate "Template for a project"
+\documentclass[a4paper]{article}
 
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\numberwithin{equation}{subsection}
+
+\title{\textbf{$1}}
+\author{\textbf{Vinicius Capriles Port}}
+
+\begin{document}
+\maketitle
+
+
+
+
+\section{$2}
+
+
+
+\end{document}
+endsnippet
