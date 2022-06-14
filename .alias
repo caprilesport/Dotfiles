@@ -3,14 +3,12 @@
 # common folders i use
 alias chem='cd ~/Chem'
 alias dotfiles='cd ~/Repos/dotfiles'
-alias cult='cd ~/Cult'
 alias repos='cd ~/Repos'
 alias doc='cd ~/Chem/doutorado/projects'
 alias scripts='cd ~/scripts'
 alias software='cd /opt/'
 alias downloads='cd ~/Downloads'
 alias finance='cd ~/Finances'
-alias projects='cd ~/Chem/doutorado/projects'
 
 # shortcuts
 alias ..='cd ..'
@@ -68,7 +66,6 @@ alias lla='ls -la'
 alias lt='ls --tree'
 
 # git 
-alias untrackedgit='git ls-files --others --exclude-standard' # check for untracked files
 alias g='git'
 alias gf='git diff --name-only'
 

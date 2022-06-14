@@ -21,12 +21,8 @@ plugins=(
   npm
   poetry
   rust
-  vscode
-  # fzf-zsh-plugin
-  # fzf-tab
   zsh-syntax-highlighting 
   zsh-autosuggestions
-  zsh-history-substring-search
   zsh-vi-mode
 )
 source $ZSH/oh-my-zsh.sh
@@ -35,21 +31,6 @@ source $ZSH/oh-my-zsh.sh
 source ~/.alias
 source ~/.env
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# powerlevel10k theme, to customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-path=('/home/vinicp/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
-
-source /home/vinicp/.config/broot/launcher/bash/br
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS="--height 60% --layout=reverse"
 
