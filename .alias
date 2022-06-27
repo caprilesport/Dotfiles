@@ -69,5 +69,8 @@ alias lt='ls --tree'
 alias g='git'
 alias gf='git diff --name-only'
 
+# csync
+alias cs='csync'
+
 # common conversion 
 alias orca2xyz='obabel -i orca $1 -o xyz'

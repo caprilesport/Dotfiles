@@ -23,11 +23,24 @@ Yours sincerely,
 Vinicius C. Port
 endsnippet
 
+#bold, italics and underscored
+snippet bf "bold text"
+\textbf{$0}
+endsnippet
+
 # create environments 
 snippet beg "begin{} / end{}" bA
 \begin{$1}
 	$0
 \end{$1}
+endsnippet
+
+# create figures
+snippet figure "begin{figure}"
+\begin{figure}[H]
+    \includegraphics[width=1.0\textwidth]{$0}
+    \centering
+\end{figure}
 endsnippet
 
 # mathmode inline
@@ -131,7 +144,9 @@ snippet reportTemplate "Template for a project"
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{float}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumerate}
 
 \numberwithin{equation}{subsection}
 
