@@ -32,15 +32,8 @@ vim.api.nvim_set_keymap('n', '<Leader>fg', ':Telescope live_grep<cr><CR>', {nore
 vim.api.nvim_set_keymap('n', '<Leader>fb', ':Telescope buffers<cr><CR>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap('n', '<Leader>fh', ':Telescope help_tags<cr><CR>', {noremap=true, silent=true})
 
--- Dashboard
--- nmap <Leader>ss :<C-u>SessionSave<CR>
--- nmap <Leader>sl :<C-u>SessionLoad<CR>
--- nnoremap <silent> <Leader>fh :DashboardFindHistory<CR>
--- nnoremap <silent> <Leader>ff :DashboardFindFile<CR>
--- nnoremap <silent> <Leader>tc :DashboardChangeColorscheme<CR>
--- nnoremap <silent> <Leader>fa :DashboardFindWord<CR>
--- nnoremap <silent> <Leader>fb :DashboardJumpMark<CR>
--- nnoremap <silent> <Leader>cn :DashboardNewFile<CR>
+vim.api.nvim_set_keymap('n', '<Leader>lo', ':VimtexCompile<cr><CR>', {noremap=true, silent=true})
+
 
 -- LSP
 -- Mappings.
