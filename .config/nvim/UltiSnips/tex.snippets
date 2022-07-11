@@ -28,8 +28,13 @@ snippet bf "bold text"
 \textbf{$0}
 endsnippet
 
-snippet if "italic text"
+snippet itf "italic text"
 \textit{$0}
+endsnippet
+
+#aspitas
+snippet ea "entre aspas"
+``$0''
 endsnippet
 
 # create environments 
@@ -44,8 +49,28 @@ snippet figure "begin{figure}"
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{$0}
-    \label{fig:$1}
-    \caption{}
+    \caption{$1}
+    \label{fig:$2}
+\end{figure}
+endsnippet
+
+snippet sub2figure "2 subfigures"
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{./$1}
+        \caption{$2}
+        \label{fig:$3}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{./$1}
+        \caption{$2}
+        \label{fig:$3}
+    \end{subfigure}
+    \caption{$0}
+    \label{fig:$4}
 \end{figure}
 endsnippet
 

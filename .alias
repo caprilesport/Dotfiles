@@ -68,6 +68,7 @@ alias lt='ls --tree'
 # git 
 alias g='git'
 alias gf='git diff --name-only'
+alias gac='g a . && g c "updates" && g ps'
 
 # csync
 alias cs='csync'
